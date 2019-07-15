@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <div id="app" class="main-container">
+        <div class="wrap">
+            <!-- nav -->
+            <nav class="nav">
+                <a href="index.html">
+                    <p class="logo">BLAH</p>
+                    <img src="" alt="title-logo" id="logo" class="title-logo" style="display: none;">
+                </a>
+                <ul>
+                    <li><a href="index.html">GALLERY</a></li>
+                    <li><a href="index.html">PROFILE</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- section -->
+            <section id="section">
+                <div class="category">
+                    <ul>
+                        <li>2015 1기</li>
+                        <li>2016 2기</li>
+                        <li>2017 3기</li>
+                        <li>2018 4기</li>
+                        <li>2019 5기</li>
+                    </ul>
+                </div>
+                <!--grid-container start-->
+                <div class="grid-container">
+                    <!--grid-item start-->
+                    <div class="grid-item">
+                        <div class="item-photo">
+                            <img src="http://placehold.it/180x180" alt="grid-item">
+                            <div class="author-list">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Title Here</div>
+                            <p class="item-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-photo">
+                            <img src="http://placehold.it/180x180" alt="grid-item">
+                            <div class="author-list">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Title Here</div>
+                            <p class="item-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="item-photo">
+                            <img src="http://placehold.it/180x180" alt="grid-item">
+                            <div class="author-list">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                                <img src="https://via.placeholder.com/18x18/FF0000/FFFFFF?Text=Down.comC/O https://placeholder.com/"
+                                    class="author-list-img" alt="item-author">
+                            </div>
+                        </div>
+                        <div class="item-text">
+                            <div class="item-title">Title Here</div>
+                            <p class="item-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                    <!--grid-item end-->
+                </div>
+                <!--grid-container end-->
+            </section>
+            <script>
+                var grid_item = document.getElementsByClassName("grid-item");
+                var list_img = document.getElementsByClassName('author-list-img');
+                for(var i = -1, j = 0; j < list_img.length; j++) {
+                    if(j%4 == 0) {i++;}
+                    var right = 12;
+                    // console.log(grid_item[i]);
+                    // console.log(list_img[j]);
+
+                    document.getElementsByClassName("grid-item")[i]
+                        .getElementsByClassName('author-list-img')[j]
+                        .style.position = "absolute";
+                    document.getElementsByClassName("grid-item")[i]
+                        .getElementsByClassName('author-list-img')[j]
+                        .style.right = "10px";
+                    
+                    right += right;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

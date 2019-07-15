@@ -1,3 +1,5 @@
+/*!Gallery_inside*/
+
 * {
     padding: 0;
     margin: 0;
@@ -5,43 +7,36 @@
     text-decoration: none;
 }
 #app {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 .wrap {
     overflow-x: hidden;
-    max-width: calc(100vw - 10px);
+    /* max-width: calc(100vw - 10px); */
     width: 1440px;
+    margin: 0 auto;
     padding: 98px 0 589px 0;
 }
 .nav {
     height: 45px;
-
     display: flex;
     align-content: center;
-
     padding: 0 270px 64px;
 }
 .logo {
-    width: 92px;
-    height: 45px;
-
     font-family: Lemon/Milk light;
     font-size: 36px;
     font-weight: bold;
     line-height: 45px;
     /* identical to box height */
-
+    
     display: flex;
     align-items: center;
     letter-spacing: 0.08em;
-
     color: #000000;
 }
 .nav ul {
-    width: 425px;
-    height: 28px;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -49,8 +44,6 @@
     margin-left: 357px;
 }
 .nav ul li {
-    height: 28px;
-
     font-family: Raleway;
     font-style: normal;
     font-weight: 300;
@@ -98,11 +91,6 @@
     background: #C4C4C4;
     margin-bottom: 24px;
 }
-/* .information ul img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 24px;
-} */
 .author-name {
     width: 92px;
     height: 36px;
@@ -144,11 +132,11 @@
 
     color: rgba(0, 0, 0, 0.48);
 }
-.grid-container {
+.poster-container {
     width: 500px;
     margin-top: 12px;
 }
-.grid-container > div {
+.poster-container > div {
     margin: 0 0 36px 0;
 }
 .poster > img {
