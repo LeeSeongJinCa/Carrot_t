@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="app" class="main-container">
@@ -19,20 +20,20 @@
                     <img src="" alt="title-logo" id="logo" class="title-logo" style="display: none;">
                 </a>
                 <ul>
-                    <li><a href="index.html">GALLERY</a></li>
-                    <li><a href="index.html">PROFILE</a></li>
-                    <li><a href="index.html">CONTACT</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="Gallery_inside.html">CONTACT</a></li>
                 </ul>
             </nav>
             <!-- section -->
             <section id="section">
                 <div class="category">
                     <ul>
-                        <li>2015 1기</li>
-                        <li>2016 2기</li>
-                        <li>2017 3기</li>
-                        <li>2018 4기</li>
-                        <li>2019 5기</li>
+                        <li><a href="#">2015 1기</a></li>
+                        <li><a href="#">2016 2기</a></li>
+                        <li><a href="#">2017 3기</a></li>
+                        <li><a href="#">2018 4기</a></li>
+                        <li><a href="#">2019 5기</a></li>
                     </ul>
                 </div>
                 <!--grid-container start-->
@@ -105,25 +106,6 @@
                 </div>
                 <!--grid-container end-->
             </section>
-            <script>
-                var grid_item = document.getElementsByClassName("grid-item");
-                var list_img = document.getElementsByClassName('author-list-img');
-                for(var i = -1, j = 0; j < list_img.length; j++) {
-                    if(j%4 == 0) {i++;}
-                    var right = 12;
-                    // console.log(grid_item[i]);
-                    // console.log(list_img[j]);
-
-                    document.getElementsByClassName("grid-item")[i]
-                        .getElementsByClassName('author-list-img')[j]
-                        .style.position = "absolute";
-                    document.getElementsByClassName("grid-item")[i]
-                        .getElementsByClassName('author-list-img')[j]
-                        .style.right = "10px";
-                    
-                    right += right;
-                }
-            </script>
         </div>
     </div>
 </body>

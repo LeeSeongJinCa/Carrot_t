@@ -52,3 +52,23 @@ $(function() {
             });
     });
 });
+
+function grid_item_sort() {
+    var grid_item = document.getElementsByClassName("grid-item");
+    var list_img = document.getElementsByClassName('author-list-img');
+    for (var i = -1, j = 0; j < list_img.length; j++) {
+        if (j % 4 == 0) { i++; }
+        var right = 12;
+        // console.log(grid_item[i]);
+        // console.log(list_img[j]);
+
+        document.getElementsByClassName("grid-item")[i]
+            .getElementsByClassName('author-list-img')[j]
+            .style.position = "absolute";
+        document.getElementsByClassName("grid-item")[i]
+            .getElementsByClassName('author-list-img')[j]
+            .style.right = "10px";
+
+        right += right;
+    }
+}

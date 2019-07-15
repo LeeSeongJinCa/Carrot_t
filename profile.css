@@ -1,0 +1,30 @@
+/*!profile*/
+
+/*{
+    border: 1px solid red;
+} */
+
+#profile {
+    width: 900px;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px;
+    grid-template-rows: 160px 160px 160px 160px;
+    grid-column-gap: 85px;
+    grid-row-gap: 60px;
+}
+.grid-item {
+    position: relative;
+    text-align: center;
+}
+.grid-item > img {
+    border-radius: 50%;
+}
+.grid-item > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

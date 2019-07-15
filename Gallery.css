@@ -25,14 +25,9 @@
     padding: 0 270px 64px;
 }
 .logo {
-    font-family: Lemon/Milk light;
     font-size: 36px;
     font-weight: bold;
     line-height: 45px;
-    /* identical to box height */
-    
-    display: flex;
-    align-items: center;
     letter-spacing: 0.08em;
     color: #000000;
 }
@@ -44,30 +39,22 @@
     margin-left: 357px;
 }
 .nav ul li {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 300;
+    width: 108.325px;
     font-size: 24px;
     line-height: 28px;
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.08em;
     margin-left: 36px;
 
     color: #000000;
 }
 .nav ul li a {
-    font-family: Raleway;
-    font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.08em;
-
     color: #000000;
+}
+.nav ul li a:hover {
+    font-weight: bold;
 }
 
 #section {
@@ -90,17 +77,21 @@
     font-weight: 100;
     color: #000000;
 }
+.category > ul > li > a {
+    color: #000000;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 180px 180px 180px;
     grid-template-rows: 300px 300px 300px;
-    grid-column-gap: 9px;
-    grid-row-gap: 12px;
+    grid-column-gap: 69px;
+    grid-row-gap: 36px;
     grid-auto-rows: auto;
     /* margin-bottom: 64px; */
 }
 .grid-item {
     box-shadow: 0 0 3px 0.1px #adadad;
+    cursor: pointer;
 }
 .item-photo {
     position: relative;
