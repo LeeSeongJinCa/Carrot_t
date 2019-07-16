@@ -18,14 +18,8 @@
 .author-name {
     width: 92px;
     height: 36px;
-
-    font-family: SpoqaHanSans;
     font-size: 22px;
     line-height: 36px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
 
     color: #000000;
@@ -33,14 +27,8 @@
 .author-email {
     width: 153px;
     height: 19px;
-
-    font-family: Futura;
     font-size: 14px;
     line-height: 19px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
 
     color: rgba(0, 0, 0, 0.4);
@@ -48,8 +36,6 @@
 .description {
     width: 200px;
     height: 177px;
-
-    font-family: Futura;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.04em;
